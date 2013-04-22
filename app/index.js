@@ -1,8 +1,10 @@
 var fs = require('fs');
+var path = require('path');
 
 var Generator = module.exports = function() {
   var prompts = [];
   var files   = this.expandFiles('**/*', { cwd: this.sourceRoot(), dot: true });
+  var package = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
   var ignores = [
     '.git',
     'LICENSE',
