@@ -19,7 +19,7 @@ Usage (for your end-users)
 ---------------
 
 1. Install Yeoman: `npm install -g yo`
-2. Install the generator locally: `npm install -g generator-boilerplate`
+2. Install the generator locally: `npm install generator-boilerplate`
 3. Run: `yo boilerplate`
 4. Start using Boilerplate
 
